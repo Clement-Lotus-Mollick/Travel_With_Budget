@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy ui link stt -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind and daisy ui link stt -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="./img/travel.webp" type="image/x-icon">
+    <title>Lets Travel</title>
+</head>
+<body>
+    <header id="stick">
+        <nav  class="max-w-[1300px] mx-auto mb-[30px]">
+            <!-- daisy paste stt -->
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <a class="btn btn-ghost text-3xl">GetReady</a>
+                </div>
+                <div class="flex-none">
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span id="the_count" class="badge badge-sm indicator-item text-red-600 text-xl font-bold">0</span>
+                      </div>
+                    </div>
+                    <div
+                      tabindex="0"
+                      class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                      <div class="card-body">
+                        <span class="text-lg font-bold">8 Items</span>
+                        <span class="text-info">Subtotal: $999</span>
+                        <div class="card-actions">
+                          <button class="btn btn-primary btn-block">View cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img
+                          alt="Tailwind CSS Navbar component"
+                          src="./img/travel.webp" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            <!-- daisy paste end -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero stt -->
+        <section class="max-w-[1300px] mx-auto mb-[30px]">
+            <!-- daisy p stt -->
+            <div class="hero bg-base-200 min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img
+                    src="./img/travel2.jpg"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                    <h1 class="text-5xl font-bold">We are going to travel</h1>
+                    <p class="py-6">
+                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <h1 class="font-bold text-4xl">Total Cost: <span id="tBudget900">900</span>$</h1>
+                  </div>
+                </div>
+              </div>
+            <!-- daisy p end -->
+        </section>
+        <!-- hero end  -->
+
+        <!-- card section stt -->
+         <section class="max-w-[1300px] mx-auto mb-[30px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 px-2 md:px-0">
+                <!-- first card  -->
+                <div class="border-gray-400 border-2 flex justify-between items-center p-4">
+                    <img src="./img/images1.jpg" alt="">
+                    <div>
+                        <h2>Khulna</h2>
+                    <p>Cost: <span>300</span>$</p>
+                    <button class="bg-gray-200 rounded-lg px-4 the_cart">Add to card</button>
+                    </div>
+                </div>
+                <!-- first card end -->
+
+                <!-- second card stt -->
+                <div class="border-gray-400 border-2 flex justify-between items-center p-4">
+                    <img src="./img/images2.jpg" alt="">
+                    <div>
+                        <h2>Sajek</h2>
+                    <p>Cost: <span>400</span>$</p>
+                    <button class="bg-gray-200 rounded-lg px-4 the_cart">Add to card</button>
+                    </div>
+                </div>
+                <!-- second card end -->
+
+                <!-- third card stt -->
+                <div class="border-gray-400 border-2 flex justify-between items-center p-4">
+                    <img src="./img/images3.jpg" alt="">
+                    <div>
+                        <h2>Meherpur</h2>
+                    <p>Cost: <span>450</span>$</p>
+                    <button class="bg-gray-200 rounded-lg px-4 the_cart">Add to card</button>
+                    </div>
+                </div>
+                <!-- third card end -->
+
+                <!-- fourth card stt -->
+                <div class="border-gray-400 border-2 flex justify-between items-center p-4">
+                    <img src="./img/images4.jpg" alt="">
+                    <div>
+                        <h2>Cox Bazar</h2>
+                    <p>Cost: <span>500</span>$</p>
+                    <button class="bg-gray-200 rounded-lg px-4 the_cart">Add to card</button>
+                    </div>
+                </div>
+                <!-- fourth card end -->
+            </div>
+         </section>
+        <!-- card section end -->
+
+        <!-- card calculation section stt  -->
+         <section>
+            <div class="text-center">
+            <h1 class="text-3xl">Cart</h1>
+            <hr>
+            <ul id="selectedPlaceCont"></ul>
+            <hr>
+            <p>Total Cost: <span id="totalCost" class="text-green-600 font-bold">0</span>$</p>
+            <button onclick="vehicleClick('bus')"  class="bg-slate-300 myVehicle">Bus +100</button>
+            <button onclick="vehicleClick('train')"  class="bg-slate-300 myVehicle">Train -200</button>
+            <button onclick="vehicleClick('flight')"  class="bg-slate-300 myVehicle">Flight +500</button>
+            <h3 class="text-3xl">Grand Total: <span id="grandTotal">0</span>$</h3>
+        </div>
+         </section>
+        <!-- card calculation section end -->
+    </main>
+
+    <!-- additional js file stt -->
+    <script src="script.js"></script>
+    <script src="optimized.js"></script>
+     <!-- additional js file end -->
+</body>
+</html>
